@@ -79,37 +79,47 @@
 </script>
 
 <div class="flex-parent-element">
-    <div class="flex-child-element" contentEditable="true" id="inputtextbox"></div>
-    <div class="flex-child-element" id="uwutextbox"></div>
-</div>
+    <div class="flex-child-element">
+        Normal text goes here
+        <div contentEditable="true" id="inputtextbox" class="box">
+        </div>
+    </div>
+    <div class="flex-child-element">
+        And uwu comes out here
+        <div id="uwutextbox" class="box"></div>
+    </div>
 
-<style>
-    html {
-        background-color: rgb(200, 200, 200);
-        font-size: 20px;
-        font-family: Verdana, sans-serif;
-    }
-    
-    .flex-parent-element {
-        display: flex;
-        width: 100%;
-    }
-    
-    .flex-child-element {
-        flex: 1;
-        height: 35vh;
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgb(255, 255, 255);
-        margin: 80px;
-        overflow: auto;
-    }
-    
-    .flex-child-element:first-child {
-        margin-right: 40px;
-    }
-    
-    #uwutextbox {
-        white-space: pre-wrap;
-    }
-</style>
+    <style>
+        html {
+            background-color: rgb(200, 200, 200);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+        
+        .flex-parent-element {
+            display: flex;
+            width: 100%;
+        }
+        
+        .flex-child-element {
+            flex: 1;
+            padding: 10px;
+            margin: 80px;
+            overflow: auto;
+        }
+        
+        .box {
+            height: 35vh;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 5px;
+        }
+        
+        .flex-child-element:first-child {
+            margin-right: 40px;
+        }
+        
+        #uwutextbox {
+            white-space: pre-wrap;
+        }
+    </style>
